@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quran Ayat Card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General page styles */
+        body {
+            font-family: 'Noto Serif Bengali', serif; /* Use Google Bengali font */
+            background-color: #1a1a1a; /* Dark gray background to make the card pop */
+            color: #d8c49e; /* Light gold/tan for all text by default */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* The main outer golden-colored box with curved corners */
+        .golden-outer-box {
+            background-color: #3b2f1a; /* Dark reddish-brown background */
+            border: 2px solid #d4af37; /* Solid gold border */
+            border-radius: 20px; /* Highly curved corners */
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+            text-align: center;
+            position: relative; /* Needed for the corner accents */
+        }
+
+        /* Corner accents for the golden box */
+        .corner-accent {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border: 2px solid #d4af37;
+        }
+        .top-left { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+        .top-right { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+        .bottom-left { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+        .bottom-right { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+
+        /* The emoji and text at the top */
+        .header-content {
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        .title-text {
+            color: #d4af37; /* Distinct gold color for the text next to the emoji */
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* The inner black box containing the Quranic Ayat */
+        .inner-black-box {
+            background-color: #000000; /* Pure black background */
+            border: 1px solid #d4af37; /* Thin gold border */
+            border-radius: 10px; /* Slightly curved corners */
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the Arabic text (Quranic Ayat) */
+        .arabic-text {
+            font-family: 'Amiri', serif; /* Use Google Arabic font */
+            font-size: 32px;
+            direction: rtl; /* Set text direction to right-to-left */
+            color: #d8c49e; /* Light gold/tan color */
+            line-height: 1.5; /* Good spacing between lines */
+        }
+
+        /* Styles for the Surah and Ayat reference */
+        .reference-text {
+            font-size: 14px;
+            color: #d8c49e;
+            opacity: 0.8; /* Slightly muted for a clean look */
+            margin-bottom: 10px;
+        }
+
+        /* Styles for the Bengali meaning text */
+        .bengali-meaning-text {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #d8c49e;
+        }
+
+        /* Styles for the colored motivational text at the bottom */
+        .footer-text {
+            color: #c09e6c; /* Unique golden-brown color for this specific text */
+            font-size: 14px;
+            font-style: italic; /* Match the italicized style in the image */
+            margin-bottom: 15px;
+        }
+
+        /* Sparkle icons for the footer text */
+        .sparkle-icon {
+            color: #d4af37;
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="golden-outer-box">
+        <div class="corner-accent top-left"></div>
+        <div class="corner-accent top-right"></div>
+        <div class="corner-accent bottom-left"></div>
+        <div class="corner-accent bottom-right"></div>
+
+        <div class="header-content">
+            <span class="emoji">😥</span>
+            <span class="title-text">দুঃক্ষিত</span>
+        </div>
+
+        <div class="inner-black-box">
+            <p class="arabic-text">أَلَا إِنَّ أَوْلِيَاءَ اللَّهِ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ</p>
+        </div>
+
+        <p class="reference-text">সূরা ইউনুস • আয়াত ৬২</p>
+        <p class="bengali-meaning-text">জেনে রাখো, আল্লাহর বন্ধুদের কোনো ভয় নেই এবং তারা দুঃখিতও হবে না।</p>
+        
+        <p class="footer-text">
+            <span class="sparkle-icon">✦</span>
+            আল্লাহর সাথে সম্পর্ক গড়ে — ভয় ও দুঃখ তোমার থেকে দূরে চলে যাবে।
+            <span class="sparkle-icon">✦</span>
+        </p>
+    </div>
+</body>
+</html>
